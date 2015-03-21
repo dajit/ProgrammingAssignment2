@@ -71,7 +71,7 @@ cacheSolve <- function(x, ...) {
   
   #This function computes the inverse of the special "matrix" returned by makeCacheMatrix above. 
   #If the inverse has already been calculated (and the matrix has not changed), 
-  #then the cachesolve should retrieve the inverse from the cache.
+  #then the cacheSolve should retrieve the inverse from the cache.
   
   mi <- x$getInverse()
   if(!is.null(mi)) {
@@ -79,7 +79,7 @@ cacheSolve <- function(x, ...) {
     return(mi)
   }
   
-  # we reached here mean inverse was not cached so calculate inverse
+  # we reached here means inverse was not cached so calculate inverse
   message("cached inverse matrix not available so calculate inverse")
   dataMatrix <- x$get()
   mi <- solve(dataMatrix, ...)
