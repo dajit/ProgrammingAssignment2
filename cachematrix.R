@@ -1,3 +1,7 @@
+#
+## dajit v03.0 21-mar-2015 Addedd version history header
+#
+
 ## Put comments here that give an overall description of what your
 ## functions do
 
